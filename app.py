@@ -126,8 +126,6 @@ if prompt := st.chat_input("메시지를 입력하세요..."):
                 model="gpt-5-mini",  # 새 모델 사용
                 messages=messages,
                 stream=True,
-                temperature=0.8,  # 더 자연스러운 대화를 위해
-                max_tokens=500,
                 presence_penalty=0.3,  # 반복 줄이기
                 frequency_penalty=0.3
             )
